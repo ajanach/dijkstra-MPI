@@ -70,26 +70,6 @@ def naive_dijkstras(graph, root):
             break
     return dist
 
-
-def naive_dijkstras(graph, root):
-    n = len(graph)
-    dist = [Inf for _ in range(n)]
-    dist[root] = 0
-    visited = [False for _ in range(n)]
-    for _ in range(n):
-        u = -1
-        for i in range(n):
-            if not visited[i] and(u== -1 or dist[i]<dist[u]):
-                u=i
-        visited[u] = True
-        for v, w in graph[u]:
-            if dist[u] + w < dist[v]:
-                dist[v] = dist[u] + w
-        if dist[u] == Inf:
-            break
-    return dist
-
-
 # create our graph using an adjacency list representation
 # each "node" in our list should be a node name and a distance
 #(node,distance)
