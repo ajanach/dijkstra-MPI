@@ -1,24 +1,24 @@
 # Dijkstra MPI
 Implementation of the Dijkstra algorithm serially and in parallel for the college at the Faculty of informatics and digital technologies.
 
-Studenti:
+Students:
 - Rene Frlan
 - Antonio Janach
 
-### Basic instructions for using the algorithm
+## Basic instructions for using the algorithm
 The instructions were created for using the algorithm on the Linux operating system. 
 
-First, it is necessary to create a virtual environment for Python inside the directory where the code was downloaded. In the shell of the system, go to the directory where the code was downloaded (using cd command) and run the command shown below. We are doing this to prevent system Python installation from anomalies.
+First, you gotta make a virtual environment for Python in the folder where you downloaded the code. Go to that folder using the "cd" command in the command prompt and run the command below. This is to keep anomalies from happening to the Python that's already on your computer.
 ```sh
 $ python3 -m venv env
 ```
 
-Then we need to install all necessary modules to run the program. And this is done in the following way: 
+Then we need to install all necessary modules to run the program. And this is done in the following way:
 ```sh
 pip install -r zahtjevi.txt
 ```
 
-After creating a virtual environment for Python and installing all necessary modules, the code can be run. Instructions for performing the sequential Dijkstra algorithm and the parallel Dijkstra algorithm are shown below
+Upon creating a virtual environment for Python and installing all required modules, the code can be executed. The instructions for implementing the sequential version of the Dijkstra algorithm and the parallel version of the Dijkstra algorithm are outlined below.
 
 Running the sequential Dijkstra algorithm:
 ```sh
